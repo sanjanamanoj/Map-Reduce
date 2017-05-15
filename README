@@ -1,0 +1,29 @@
+Project Folder Structure:
+
+Parent Directory:
+	---- Train
+	---- ---- java files
+	---- ---- Makefile
+	---- Test
+	---- ---- java files
+	---- ---- Makefile
+	---- Makefile
+	---- README
+	---- AnnaloganathanManojkumar.csv
+	---- syslog
+	---- Report.pdf
+
+Train: contains the source code for training model on the labeled data
+Test: contains the source code for testing the trained model on the unlabeled data
+syslog: contains the syslog files for training and prediction for a successful AWS run.
+Makefile: logic for running the entire map reduce program including training and prediction.
+
+
+INSTRUCTIONS TO RUN:
+1. Create a folder 'input' and place the labeled and unlabeled data inside this folder
+2. Type 'make' in the command line for the parent directory
+3. Type 'make run' in the command line for the parent directory
+
+NOTE: 
+1. For running the prediction map reduce job, the models should be present under the 'output' folder inside a folder called 'models'
+2. In case of running 'make run' from the parent directory, point#1 is taken care by the entire program.
